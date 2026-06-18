@@ -28,4 +28,11 @@ public class Preco {
     public Mercado getMercado() {
         return mercado;
     }
+    
+    @Override
+public String toString() {
+    return "Produto: " + produto.getNome()
+            + " | Mercado: " + mercado.getNome()
+            + " | Valor: R$ " + valor;
+    }
 }
